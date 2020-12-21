@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dubd.adminmh.view.admin.AdminActivity"
+    android:id="@+id/root"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:id="@+id/linear_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_top_bar"
+        android:gravity="center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/backImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:src="@drawable/ic_back" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/bangla_font_4"
+            android:gravity="center"
+            android:text="মাগুরা হাট"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="35sp" />
+
+
+        <ImageView
+            android:id="@+id/deleteImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:src="@drawable/ic_delete" />
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/updateProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/bangla_font_4"
+        android:padding="20dp"
+        android:text="প্রোডাক্ট সিঙ্ক করুন"
+        android:textColor="@color/iconColor"
+        android:textSize="25sp"
+        android:layout_margin="15dp"
+        app:backgroundTint="@color/primaryDarkColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear_top_bar" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/verifyOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/bangla_font_4"
+        android:layout_margin="15dp"
+        android:padding="20dp"
+        android:text="ওর্ডার ভেরিফাই করুন"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="25sp"
+        app:backgroundTint="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updateProduct" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/noPermission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fontFamily="@font/bangla_font_4"
+        android:layout_margin="15dp"
+        android:padding="20dp"
+        android:text="ওর্ডার ভেরিফাই করুন"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="25sp"
+        app:backgroundTint="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updateProduct" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/verifiedOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/bangla_font_4"
+        android:padding="20dp"
+        android:text="ভেরিফাইড ওর্ডার"
+        android:textColor="@color/secondaryLightColor"
+        android:textSize="25sp"
+        app:backgroundTint="@color/secondaryDarkColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/verifyOrder" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/completedOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/bangla_font_4"
+        android:padding="20dp"
+        android:text="কমপ্লিটেড ওর্ডার"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="25sp"
+        app:backgroundTint="@color/primaryColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/verifiedOrder" />
+
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_top_bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/bangla_font_4"
+            android:gravity="center"
+            android:text="FROM DUBD"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/bangla_font_4"
+            android:gravity="center"
+            android:text="DEVELOPER UNKNOWN BANGLADESH"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

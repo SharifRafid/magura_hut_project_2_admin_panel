@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ADMIN MH</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">ইমেইল</string>
+    <string name="prompt_password">পাসওয়ার্ড</string>
+    <string name="action_sign_in">    সাইন ইন    </string>
+    <string name="action_sign_in_short">সাইন ইন</string>
+    <string name="title_activity_maps">Map</string>
+</resources>
